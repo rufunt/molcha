@@ -6,7 +6,8 @@ def get_html(url):
 	return r.text
 
 def refined(s):
-	r = s.split(' ')[0]	
+	r = s.split(' ')[0]
+	result = r.replace(',', '')
 	
 
 def get_data(html):
