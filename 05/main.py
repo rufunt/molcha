@@ -1,12 +1,19 @@
 import csv
 
 def write_csv(data):
+	with open('names.csv', 'a') as file:
+		writer = csv.writer(file)
 
 def main():
 	d = {'name': 'Petr', 'surname': 'Ivanov', 'age': 21}
+	d1 = {'name': 'Ivan', 'surname': 'Ivanov', 'age': 2}
+	d2 = {'name': 'Olga', 'surname': 'Ivanov', 'age': 22}
 
 
+	l = [d, d1, d2]
 
+	for i in l:
+		print(i)
 
 
 
